@@ -1,0 +1,27 @@
+<div class="Signup">
+    <div class="SignupForm">
+        <h1>SignUp</h1>
+        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+            <label for="name">Name</label>
+            <input type="text" id="name" formControlName="name" placeholder="Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" formControlName="email" placeholder="Email">
+
+            <label for="birthDate">BirthDate</label>
+            <input type="date" id="birthDate" formControlName="birthDate">
+
+            <label for="userName">UserName</label>
+            <input type="text" id="userName" formControlName="userName" placeholder="Create a user name">
+
+            <label for="createPassword">Create a Password</label>
+            <input type="password" id="createPassword" formControlName="password" placeholder="Create a password">
+
+            <label for="confirmPassword">Confirm your Password</label>
+            <input type="password" id="confirmPassword" formControlName="confirmPassword" placeholder="Confirm password">
+
+            <input type="submit" name="Submit">
+            <a routerLink="">Cancel</a>
+        </form>
+    </div>
+</div>

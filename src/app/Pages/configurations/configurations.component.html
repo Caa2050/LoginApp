@@ -1,0 +1,40 @@
+<app-menu></app-menu>
+<div class="config">
+    <div class="options">
+        <div class="get" (click)="UpdateValue('get')">
+            <img src="../../../assets/Images/User.png" alt="">
+            <h2>See Profile</h2>
+        </div>
+        <div class="put" (click)="UpdateValue('update')">
+            <img src="../../../assets/Images/Pencil.png" alt="">
+            <h2>Edit Profile</h2>
+        </div>
+    </div>
+
+    <div class="get-user" *ngIf="value == 'get'">
+       <h3>See Profile</h3>
+       <p>Name: {{user.name}}</p>
+       <p>Email: {{user.email}}</p>
+       <p>BirthDate: {{user.birthDate}}</p>
+       <a (click)="UpdateValue('')">Close</a>
+    </div>
+    
+    <div class="put-user" *ngIf="value == 'update'">
+        <form [formGroup]="UpdateForm" (ngSubmit)="onSubmit()">
+            <input type="hidden" value="{{user.id}}">
+            <label for="name">Name</label>
+            <input type="text" id="name" formControlName="name" placeholder="Name" value="{{user.name}}">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" formControlName="email" placeholder="Email" value="{{user.email}}">
+
+            <label for="birthDate">BirthDate</label>
+            <input type="date" id="birthDate" formControlName="birthDate" value="{{user.bithDate}}">
+
+           
+            
+            <input type="submit" name="Submit">
+            <a (click)="UpdateValue('')">Cancel</a>
+        </form>
+    </div>
+</div>

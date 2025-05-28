@@ -1,0 +1,54 @@
+.Signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Signup > .SignupForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    width: 30%;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+.Signup > .SignupForm > form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Signup > .SignupForm > form > a{
+    text-decoration: none;
+    color: gray;
+    margin-top: 10px;
+}
+.Signup > .SignupForm > form > input[type=text],input[type=password],input[type=email]{
+    width:60%;
+    margin-bottom: 10px;
+    font-size: large;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+.Signup > .SignupForm > form > input[type=date]{
+    width: 50%;
+    margin-bottom: 10px;
+    border-color: lightgray;
+    font-size: large;
+    border-radius: 5px;
+}
+.Signup > .SignupForm > form > input[type=submit]{
+    width: 20%;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: green;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: 10px;
+}
+.Signup > .SignupForm > form > input[type=submit]:hover{
+    background-color: darkgreen;
+}

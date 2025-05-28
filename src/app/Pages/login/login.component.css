@@ -1,0 +1,62 @@
+.Login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.Login > h1{
+    color: black;
+    margin-bottom: 20px;
+}
+
+.Login > form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid lightgray;
+    padding: 40px;
+    border-radius: 10px;
+}
+.Login > form > label{
+    font-size: large;
+    
+}
+.Login > form > input[type=text],input[type=password] {
+    font-size: large;
+    border-radius: 5px;
+    border-color: lightgray;
+   
+}
+.Login > form > input,button,a{
+    margin-bottom: 10px;
+}
+
+.Login > form > a{
+    text-decoration: none;
+    color: gray;
+}
+.Login > form > input[type=submit]{
+    font-size: large;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.2s;
+    color: #fff;
+    border-radius: 6px;
+}
+.Login > form > input[type=submit]:hover{
+    background-color: darkgreen;
+}
+.Login > form > button{
+    font-size: large;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.2s;
+    color: #fff;
+    border-radius: 6px;
+}
+.Login > form > button:hover{
+    background-color: darkblue;
+}
